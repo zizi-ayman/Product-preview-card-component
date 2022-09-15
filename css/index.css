@@ -17,8 +17,25 @@ main{
     justify-content: center;
     flex-direction: row;
 }
-img{
+
+.desk{
+    display: block;
     width: 250px;
+}
+.mobile{
+    display: none;
+    width: 250px;
+}
+@media (max-width: 375px){
+    main{
+        flex-direction: column;
+    }
+    .desk{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
 }
 .info{
     background-color: white;
