@@ -16,10 +16,13 @@
 </head>
 <body>
     <main>
-        <img src="img/image-product-desktop.jpg" alt="" class="desk">
-        <img src="img/image-product-mobile.jpg" alt="" class="mobile"> 
+        <picture>
+            <source media="(max-width: 375px)" srcset="img/image-product-mobile.jpg">
+            <source media="(min-width: 376px)" srcset="img/image-product-desktop.jpg">
+            <img src="img/image-product-desktop.jpg" alt="" class="desk">
+        </picture>
         <div class="info">
-            <p>PERFUME</p>
+            <p class="per">PERFUME</p>
             <h1>Gabrielle Essance Eau De Parfum</h1>
             <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, perfumer-Creator for the House of CHANEL</p>
             <div class="prix">
